@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="José Victor Galindo Rodrigues">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Five Stars</title>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    
+  </head>
+  <body>
+    <header>    
+        <div class="topo">
+          <div class="logo">
+          <img src="images/logo pizzaria1.png" alt="logo-fivestars">
+          <h1>Five Stars &#127829;</h1>
+          </div> 
+          <ul class="nav-links">
+            <a href="index.html"><li>Inicio</li></a>
+            <a href="#Cadastro"><li>Cadastro</li></a>
+            <a href="#about-us"><li>Sobre nós</li></a>
+          </ul>
+          <div class="burguer">
+            <div id="linha1"></div>
+            <div id="linha2"></div>
+            <div id="linha3"></div>
+          </div>
+        </div>
+  </header>
+    <section class="main swiper mySwiper">
+      <div class="wrapper swiper-wrapper">
+        <div class="slide swiper-slide">
+          <img src="images/pizzaaa.jpg" alt="pizza1" class="image" />
+          <div class="image-data">
+            <span class="text">Do forno à sua mesa, uma jornada de sabor e prazer</span>
+            <h2>
+              Pizza de qualidade <br /> 
+              Que aquece seu coração
+            </h2>
+            <a href="#" class="button">Sobre nós</a>
+          </div>
+        </div>
+        <div class="slide swiper-slide">
+          <img src="images/PizzaTst1.jpg" alt="pizza2" class="image" />
+          <div class="image-data">
+            <span class="text">Sabor que conquista a todos.</span>
+            <h2>
+              Uma explosão de sabores<br />
+              Em cada pedaço.
+            </h2>
+            <a href="#" class="button">Cardápio</a>
+          </div>
+        </div>
+        <div class="slide swiper-slide">
+          <img src="images/PizzaTst2.jpg" alt="pizza3" class="image" />
+          <div class="image-data">
+            <span class="text">A arte de fazer pizza, aprecie com prazer.</span>
+            <h2>
+              A melhor pizza da cidade<br />
+              sem sombra de dúvida.
+            </h2>
+            <a href="#" class="button">Contatos</a>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="swiper-button-next nav-btn"></div>
+      <div class="swiper-button-prev nav-btn"></div>
+      <div class="swiper-pagination"></div>
+    </section>
+    <a name="Cadastro"></a>
+    <div class="caixa">
+      <form method="post" id="form-id" class="form-class" class="formulario">
+
+        <img src="images/logo pizzaria1.png" alt="logo-fivestars">
+        <br>
+        <h1>Five Stars &#127829;</h1>
+        <br>
+        <p>Nome completo:</p>
+        <p><input type="text" name="nome" id="txtNome" class="formulario-input"></p>
+        <br>
+        <p>Data de nascimento:</p>
+        <p>
+            <select name="dia" id="dia">
+              <option value="null"></option>
+              <script>
+                for(x=1;x<=31;x++){
+                    document.write("<option value="+x+">"+x+"</option>");
+                }
+              </script>
+            </select>
+            <select name="mes" id="mes">
+              <option value="null"></option>
+              <option value="Janeiro">Janeiro</option>
+              <option value="Fevereiro">Fevereiro</option>
+              <option value="Março">Março</option>
+              <option value="Abril">Abril</option>
+              <option value="Maio">Maio</option>
+              <option value="Junho">Junho</option>
+              <option value="Julho">Julho</option>
+              <option value="Agosto">Agosto</option>
+              <option value="Setembro">Setembro</option>
+              <option value="Outubro">Outubro</option>
+              <option value="Novembro">Novembro</option>
+              <option value="Dezembro">Dezembro</option>
+            </select>
+            <select name="ano" id="ano">
+              <option value="null"></option>
+              <script>
+                for(y=1900;y<=2023;y++){
+                  document.write("<option value="+y+">"+y+"</option>");
+                }
+              </script>
+            </select> 
+        </p>
+        <br>
+        <p>CPF:</p>
+        <p><input type="text" name="cpf" id="txtCpf" placeholder="Opcional" class="formulario-input"></p>
+        <br>
+        <p>Telefone:</p>
+        <p><input type="tel" name="telefone" id="txtTel" class="formulario-input"></p>
+        <br>
+        <p>e-mail:</p>
+        <p><input type="email" name="email" id="email" class="formulario-input"></p>
+        <br>
+        <p>Como nos conheceu?</p>
+        <p>
+        <select name="como-nos-conheceu" id="pesquisa">
+          <option value="null"></option>
+          <option value="amigo-indicação">Amigo/Indicação</option>
+          <option value="redes-sociais">Redes sociais</option>
+          <option value="parcerias">Parcerias</option>
+        </select>
+        </p>
+        <br>
+        <p><input type="submit" value="Enviar" id="submit-input"></p>
+      </form>
+    </div>
+    <a name="about-us"></a>
+    <section class="about-us">
+      <main class="about-us-content">
+        <img src="images/about-us-pizza.webp" alt="about-us-pizza">
+        <div class="placa">
+          <h1>Sobre a pizzaria Five Stars &#127829;</h1>
+          <br>
+          <p>Fundada em 2023 por um grupo de seis estudantes, a Pizzaria Five Stars é um website especializado no setor alimentício, com foco na venda de pizzas. Seu propósito é proporcionar uma experiência de alta qualidade e eficiência, visando alcançar a satisfação do cliente como resultado final.</p>
+          <img src="images/logo pizzaria1.png" alt="logo-fivestars" id="logo-about">
+        </div>
+      </main>
+    </section>
+    <div class="tst">
+      <footer>
+        <div class="footer-content">
+            <h3>Five Stars &#127829;</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo iste corrupti doloribus odio sed!</p>
+            <ul class="footer-nav">
+                <li><a href="index.html">Inicio</i></a></li>
+                <li><a href="#Cadastro">Cadastro</i></a></li>
+                <li><a href="#about-us">Sobre nós</i></a></li>
+
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy;2023 CodeWave. Desenvolvido por <span>José Victor</span></p>
+        </div>
+      </footer>
+    </div>  
+
+
+    <script src="JS/swiper-bundle.min.js"></script>
+    <script src="libs/jquery-3.6.4.min.js"></script>
+    <script src="jQuery-Mask-Plugin-master/src/jquery.mask.js"></script>
+
+    <script>
+      const form = document.querySelector('#form-id');
+      const txtNome = document.querySelector('#txtNome');
+      const txtCpf = document.querySelector('#txtCpf');
+      form.addEventListener('submit', (event) =>{
+        event.preventDefault();
+        txtNome.classList.toggle('alerta');
+        txtCpf.classList.toggle('teste');
+        console.log(form.nome.value);
+        if(form.telefone.value==""||form.email.value==""||form.nome.value==""||form.dia.value=="null"||form.mes.value=="null"||form.ano.value=="null"){
+          alert('Por favor, preencha o campo em branco.')
+        }else{
+          alert('Obrigado por se cadastrar. Em breve enviaremos uma mensagem com um cupom de desconto exclusivo pra você! ;)')
+        }
+      })
+    </script>
+    <script>
+      $('#txtCpf').mask('000.000.000-00')
+      $('#txtTel').mask('(00) 00000-0000')
+    </script>
+
+    <script>
+      const menu      = document.querySelector('.nav-links');
+      const burguer   = document.querySelector('.burguer');
+      const linha1    = document.querySelector('#linha1');
+      const linha2    = document.querySelector('#linha2');
+      const linha3    = document.querySelector('#linha3');
+
+      burguer.addEventListener('click',()=>{
+          menu.classList.toggle('nav-active');
+          linha1.classList.toggle('linha1-active')
+          linha2.classList.toggle('linha2-active')
+          linha3.classList.toggle('linha3-active')
+      });
+    </script>
+    
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+
+    
+
+  </body>
+</html>
